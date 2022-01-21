@@ -12,7 +12,7 @@ class Solution:
             if colors[i] not in f:
                 f[colors[i]] = i
             for k, v in f.items():
-                max_d = max(max_d, i - v if k != colors[i] else 0)
+                max_d = max(max_d, i - v if k != colors[i] else 0)  
         return max_d
 
 
